@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="header">Cascading Style Sheets Cheatsheet</div>
+    <div class="main-container">
+      <table class="main-table">
+        <tt class="heading">Font Properties</tt> 
+        <th>Property</th>
+        <th>Value</th>
+        <th>Definition</th>
+        <th>Example</th>
+        <th>Output</th>
+        <tr>
+            <td>font-family</td>
+            <td> serif,sen-serif,cursive,fantsy..</td>
+            <td>Changes the font family of certain words, sentences,
+                paragraphs</td>
+            <td>p{font-family:serif;}</td>
+            <td><p style="font-family: serif;">Css is fun</p></td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>iaLic,normaL,unset,calc</td>
+            <td>Changes text: normal, oblique, and italics.</td>
+            <td>h4{font-style:italic;}</td>
+            <td><h4 style="font-style: italic;">Hi there!</h4></td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>bold,bolder,normal,calc..</td>
+            <td>Used to specify the weight of the font</td>
+            <td>p{ font-weight: normal; }</td>
+            <td><p style="font-weight: normal;">CSS is fun</p></td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>large,small, larger..</td>
+            <td>Used to modify the size of the displayed font
+            <td>p{ font-size: 12px; }</td>
+            <td><p style="font-size: 12px;">CSS is fun</p></td>
+        </tr>
+        <tr>
+            <td>font</td>
+            <td>large,normal,unset,small..</td>
+            <td>Used to combine all properties of fonts.</td>
+            <td>p{font: bold, 12px, serif}</td>
+            <td><p style="font: bold 12px serif;">CSS is fun</p></td>
+        </tr>
+
+
+        
+
+
+
+        <table class="second-table">
+            <tt class="sub-title">Color and Background Properties</tt>
+        <th>Property</th>
+        <th>Value</th>
+        <th>Definition</th>
+        <th>Example</th>
+        <th>Output</th>
+        
+        <tr>
+            <td>color</td>
+            <td>black,red, aqua , white</td>
+            <td>Changes the color of text.</td>
+            <td>h4{ color: blue; }</td>
+            <td><h4 style="color: blue;">Blue</h4></td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>wihte, rgba,aqua ,black</td>
+            <td>Sets the background color of an element.</td>
+            <td>h4{ background-color: aqua; }</td>
+            <td><h4 style="background-color: aqua;">Hi there!</h4></td>
+        </tr>
+        <tr>
+            <td>Background-Image
+            </td>
+            <td>none,image, unset..</td>
+            <td>Determines how a specified background image is repeated.</td>
+            <td>h4{ background-image: unset; }</td>
+            <td><h4 style="background-image: inherit;">Hi there</h4></td>
+        </tr>
+        <tr>
+            <td>background-repeat</td>
+            <td> repeat,repeat x, repeat y,  none-repeat..</td>
+            <td>Determines how a specified background image is repeated.</td>
+            <td> body{ background: white url(candybar.gif);
+                background-repeat: repeat-x; }</td>
+            <td><h4  style="background-repeat: repeat-y;">CSS is fun </h4></td>
+
+        </tr>
+        <tr>
+            <td>background-attachment</td>
+            <td>fixed,local,scrol,calc</td>
+            <td>Determines if a specified background image will scroll with the
+                content or be fixed with regard to the canvas.</td>
+            <td>h3{background-attachment: fixed; }</td>
+            <td><h3 style="background-attachment:fixed;">Hello</h3></td>
+        </tr>
+        <tr>
+            <td>background</td>
+            <td>fixed,local,none,scrol.</td>
+            <td>Used to combine all properties of background.</td>
+            <td>p{ background: #f0f8ff fixed; }</td>
+            <td><p style="background: #8ab1d2 fixed;">Wed Development</p></td>
+        </tr>
+    </table>
+
+
+
+
+
+
+    <table class="tirth-table">
+        <tt class="heading">Text Properties</tt> 
+        <th>Property</th>
+        <th>Value</th>
+        <th>Definition</th>
+        <th>Example</th>
+        <th>Output</th>
+        <tr>
+            <td>word-spacing</td>
+            <td>normal,%,em,px</td>
+            <td>Defines an additional amount of space between words.</td>
+            <td>p{ word-spacing: -0.2em; }</td>
+            <td><p style="word-spacing: -02em;">word space</p></td>
+
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>normal,%,em,px</td>
+            <td>Defines an additional amount of space between characters.</td>
+            <td>p{ letter-spacing: -0.1em; }</td>
+            <td><p style="letter-spacing: -0.1em;">letter-spacin</p></td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td>underline, overline, line-through, blink, non</td>
+            <td>Allows text to be decorated through one of five properties:
+                underline, overline, line-through, blink, none.</td>
+            <td> a{ text-decoration: none; }</td>
+            <td><a href="#" style="text-decoration: none;">Link</a></td>
+        </tr>
+        <tr>
+            <td>vertical-align </td>
+            <td>auto,bottom,middle super..</td>
+            <td>Used to alter the vertical positioning of an inline element,
+                relative to its parent element or to the element's line.</td>
+            <td>img{ vertical-align: 50%; }</td>
+            <td><img src="zarif.jpg" alt="Zarif's image " style="vertical-align: 50%;" width="50px" height="50px"></td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td>capitalize,lowecase,uparcase</td>
+            <td>Allows for capitalizing the first letter of each word (capitalize),
+                capitalizing all letters of a word (uppercase), using all small
+                letters in each word(lowercase), and the inital value(none).</td>
+            <td>h4 { text-transform: uppercase;}</td>
+            <td><h4 style="text-transform: uppercase;">Hi buddy</h4></td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>left,right,center..</td>
+            <td>Used to justify text left, center, right, and justify.</td>
+            <td>p{ text-align: center; }</td>
+            <td><p style="text-align: center;">Css is fun </p></td>
+        </tr>
+        <tr>
+            <td>tex-indent</td>
+            <td>%,px,em..</td>
+            <td>Used to specify the amount of indentation prior to the first line
+                of text</td>
+            <td>p{ text-indent: 5em; }</td>
+            <td><p style="text-indent: 5em;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>line-height </td>
+            <td>normal,ch,% em..</td>
+            <td>Used to control the spacing between baselines of text.</td>
+            <td>p{ line-height: 200%; }</td>
+            <td><p style="line-height: 200%;">CSS is fun</p></td>
+        </tr>
+    </table>
+
+
+
+
+
+    <table class="fourth-table">
+        <tt class="heading">Classification Properties</tt> 
+        <th>Property</th>
+        <th>Value</th>
+        <th>Definition</th>
+        <th>Example</th>
+        <th>Output</th>
+        <tr>
+            <td>list-style-type</td>
+            <td>armenian,circle,none,decimal</td>
+            <td>Specifies the type of list-item marker, and is used if list-styleimage is none or if image loading is turned off.</td>
+            <td>ul{ list-style-type: none; }</td>
+            <td><ul> one 
+            </ul><ul>two</ul></td>
+        </tr>
+        <tr>
+            <td>list-style-image</td>
+            <td>none,image ..</td>
+            <td>Specifies the image that will be used as list-item marker when
+                image loading is turned on, replacing the marker specified in
+                the list-style-type property.</td>
+            <td>ul li{ list-style-image: url(zarif.png); }</td>
+            <td><ul><li style="list-style-image: url(zarif.png);"><img src="zarif.jpg" alt="" height="80px" ></li> hello</ul></td>
+        </tr>
+        <tr>
+            <td>list-style-position</td>
+            <td>inside,outside,calc..</td>
+            <td>Determines where the marker is placed in regard to the list
+                item. If the value inside is used, the lines will wrap under the
+                marker instead of being indented. outside is default.</td>
+            <td>ul{ list-style-position: inside; }</td>
+            <td><ul style="list-style-position: inside;"><li>one</li> <li>two</li></ul></td>
+        </tr>
+
+
+    </table>
+
+
+
+
+
+    <table class="5th-table">
+
+        <tt class="heading">Box Properties</tt> 
+        <th>Property</th>
+        <th>Value</th>
+        <th>Definition</th>
+        <th>Example</th>
+        <th>Output</th> 
+        <tr>
+            <td>margin-top</td>
+            <td>px,%,em,pt..</td>
+            <td>Sets the top margin of an element by specifying a length or a
+                percentage.</td>
+            <td>p{ margin-top: 10px; }</td>
+            <td><p style="margin-top: 10px;">Hello</p>
+            </td>
+        </tr>
+        <tr>
+            <td>margin-right </td>
+            <td>px,%,em,pt..</td>
+            <td>Sets the right margin of an element by specifying a length or a
+                percentage.</td>
+            <td>p{ margin-right: 10px; }</td>
+            <td><p style="margin-right: 10px;">CSS is fun</p></td>
+        </tr>
+        <tr>
+            <td>margin-bottom</td>
+            <td>px,%,em,pt..</td>
+            <td>sets the bottom margin of an element by specifying a length or
+                a percentage.</td>
+            <td>p{ margin-bottom: 2em; }</td>
+            <td><p style="margin-bottom: 2em;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>margin-left</td>
+            <td>px,%,em,pt..</td>
+            <td>sets the left margin of an element by specifying a length or a
+                percentage</td>
+            <td>p{ margin-left: 2em; }</td>
+            <td><p style="margin-left: 2em;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>margin</td>
+            <td>px,%,em,pt..</td>
+            <td>Sets the margins of an element by specifying top, bottom, left
+                and right margins -- all either specifying length or percentage.</td>
+            <td>p{ margin: 2em 1em; }</td>
+            <td><p style="margin: 2em 1em;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>padding-top</td>
+            <td>px,%,em,pt..</td>
+            <td>Describes the amount of space between the top border and
+                the content of the selector.</td>
+            <td>p{ padding-top: 10px; }</td>
+            <td><p style="padding-top: 10px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>padding-right</td>
+            <td>px,%,em,pt..</td>
+            <td>Describes the amount of space between the right border and
+                the content of the selector.</td>
+            <td>p{ padding-right: 10 px; }</td>
+            <td><p style="padding-right: 10px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>padding-bottom</td>
+            <td>px,%,em,pt..</td>
+            <td>Describes the amount of space between the bottom border
+                and the content of the selector.</td>
+            <td>p{ padding-bottom: 10px; }</td>
+            <td><p style="padding-bottom: 10px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>padding-left</td>
+            <td>px,%,em,pt..</td>
+            <td>Describes the amount of space between the left border and
+                the content of the selector.</td>
+            <td>p{ padding-left: 10px; }</td>
+            <td><p style="padding-left: 10px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td>px,%,em,pt..</td>
+            <td>Shorthand for the padding-top, padding-right, padding-bottom,
+                and padding-left properties.</td>
+            <td>p{ padding: 10px 20px; }</td>
+            <td><p style="padding: 10px 20px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>border-top-width</td>
+            <td>px,%,em,pt..</td>
+            <td>Used to specify the width of an element's top border</td>
+            <td>p{ border-top: solid 20px; }</td>
+            <td><p style="border-top:solid 20px;">Css is fun!</p></td>
+        </tr>
+        <tr>
+            <td>border-right</td>
+            <td>px,%,em,pt..</td>
+            <td>Used to specify the width of an element's right border.</td>
+            <td>p{ border-right: solid 20px; }</td>
+            <td><p style="border-right:solid 20px;">Css is fun!</p></td>
+        </tr>
+        <tr>
+            <td>border-bottom</td>
+            <td>px,%,em,pt..</td>
+            <td>Used to specify the width of an element's bottom border.</td>
+            <td>p{ border-bottom: solid 20px; }</td>
+            <td><p style="border-bottom:solid 20px;">Css is fun!</p></td>
+        </tr>
+        <tr>
+            <td>border-left</td>
+            <td>px,%,em,pt..</td>
+            <td>Used to specify the width of an element's left border.</td>
+            <td>p{ border-left: solid 20px; }</td>
+            <td><p style="border-left:solid 20px;">Css is fun!</p></td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>px,%,em,pt..</td>
+            <td>Used to specify the width of an element's  border.</td>
+            <td>p{ border: solid 20px; }</td>
+            <td><p style="border:solid 20px;">Css is fun!</p></td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>px,%,em,pt..</td>
+            <td>Each block-level or replaced element can be given a width,
+                specified as a length, a percentage, or as auto</td>
+            <td>p{ width: 15px; }</td>
+            <td><p style="width: 15px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>px,%,em,pt..</td>
+            <td>Each block-level or replaced element can be given a height,
+                specified as a length or as auto.</td>
+            <td>p{ height: 15px; }</td>
+            <td><p style="height: 15px;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>float </td>
+            <td>left,right,none</td>
+            <td>Allows text to wrap around an element (left, right, none).</td>
+            <td>P { float: right; }</td>
+            <td><p style="float: right;">Hi there!</p></td>
+        </tr>
+        <tr>
+            <td>clear </td>
+            <td>left,right,none </td>
+            <td>Specifies whether an element allows floating elements to its
+                sides (left, right, none).</td>
+            <td>P { clear : right; }</td>
+            <td><p style="clear: right;">Hi there!</td>
+        </tr>
+
+
+        
+    </table>
+            
+        
+    </div>
+    
+    
+  </body>
+</html>
